@@ -8,7 +8,7 @@ Now, to SSH into your instance:
 
 1)Open your terminal (Ubuntu) or use an SSH client. 
 
-![Alt Text](![Alt Text](https://drive.google.com/file/d/1d4kZVIsIeJLo5qtQg7cooEDg5IgFNRQM/view?usp=sharing))
+![Alt Text]((https://drive.google.com/file/d/1d4kZVIsIeJLo5qtQg7cooEDg5IgFNRQM/view?usp=sharing))
 
 
 2)Navigate to the directory where your private key (.pem) file is located.
