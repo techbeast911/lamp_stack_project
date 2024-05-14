@@ -8,13 +8,13 @@ Now, to SSH into your instance:
 
 1)Open your terminal (Ubuntu) or use an SSH client. 
 
-   ![Alt Text](![Alt Text](https://drive.google.com/file/d/1d4kZVIsIeJLo5qtQg7cooEDg5IgFNRQM/view?usp=sharing))
+![Alt Text](![Alt Text](https://drive.google.com/file/d/1d4kZVIsIeJLo5qtQg7cooEDg5IgFNRQM/view?usp=sharing))
 
 
 2)Navigate to the directory where your private key (.pem) file is located.
   cd /mnt/c/Users/pc/Desktop
 
-  ![Alt Text](https://drive.google.com/file/d/1xjfzD5uN-rCOPfXhLOhyjxTOUMH5pql-/view?usp=sharing)
+![Alt Text](https://drive.google.com/file/d/1xjfzD5uN-rCOPfXhLOhyjxTOUMH5pql-/view?usp=sharing)
 
 
 3)Use the following command to SSH into your instance:
@@ -243,7 +243,7 @@ we will set up a domain called teejay
    ![Alt Text](https://drive.google.com/file/d/11EVG8JbsTiX8TppyAR_9JG0sLO1nrffc/view?usp=sharing)
 
 
-  ![Alt Text](https://drive.google.com/file/d/1oVUYRdgMtdxXsEv-wNT6uO58f7btfRHy/view?usp=sharing)
+  ![Alt Text](screenshots/Screenshot 2024-05-13 134351.png)
 
 
 ### Enable php on website
