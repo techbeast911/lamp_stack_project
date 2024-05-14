@@ -8,13 +8,13 @@ Now, to SSH into your instance:
 
 1)Open your terminal (Ubuntu) or use an SSH client. 
 
-![Alt Text](https://drive.google.com/file/d/1d4kZVIsIeJLo5qtQg7cooEDg5IgFNRQM/view?usp=sharing)
+![Alt Text](https://github.com/techbeast911/lamp_stack_project/blob/main/img/Screenshot%202024-05-12%20103312.png)
 
 
 2)Navigate to the directory where your private key (.pem) file is located.
   cd /mnt/c/Users/pc/Desktop
 
-![Alt Text](https://drive.google.com/file/d/1xjfzD5uN-rCOPfXhLOhyjxTOUMH5pql-/view?usp=sharing)
+![Alt Text](https://github.com/techbeast911/lamp_stack_project/blob/main/img/Screenshot%202024-05-12%20103451.png)
 
 
 3)Use the following command to SSH into your instance:
@@ -46,7 +46,7 @@ This private key will be ignored.
 Load key "second_try.pem": bad permissions
 ubuntu@ec2-xxxxxxxxx.eu-north-1.compute.amazonaws.com: Permission denied (publickey).
 
-![Alt Text](https://drive.google.com/file/d/1A-TYjxvdu7iAVmcslHH04MYx1dcH4PSL/view?usp=sharing)
+![Alt Text](https://github.com/techbeast911/lamp_stack_project/blob/main/img/Screenshot%202024-05-12%20103740.png)
 
 
 (solution)
@@ -68,9 +68,9 @@ Start ssh-agent (Thanks to https://stackoverflow.com/a/17848593 )
 
     ssh-add ~/.ssh/key.pem
 
-![Alt Text](https://drive.google.com/file/d/1FkZNWi7O4nTLeL0-f5TMv4uaJ7twIZp8/view?usp=sharing)
+![Alt Text](https://github.com/techbeast911/lamp_stack_project/blob/main/img/Screenshot%202024-05-12%20104003.png)
 
-![Alt Text](https://drive.google.com/file/d/1ZlvWydJS_yK-NyCIWhlM0ifBRoC81_h9/view?usp=sharing)
+![Alt Text](https://github.com/techbeast911/lamp_stack_project/blob/main/img/Screenshot%202024-05-12%20104453.png)
 
 
 
@@ -91,13 +91,13 @@ Start ssh-agent (Thanks to https://stackoverflow.com/a/17848593 )
     sudo apt-get purge apache2
     sudo apt-get install apache2
 
-![Alt Text](https://drive.google.com/file/d/1_0dsM1LNZbDoDTcrFwlz4XkExcI1qmvO/view?usp=sharing)
+![Alt Text](https://github.com/techbeast911/lamp_stack_project/blob/main/img/Screenshot%202024-05-12%20104633.png)
 
-![Alt Text](https://drive.google.com/file/d/18JmevUumt7WirRyN1qGYqpBSnSL_y9L7/view?usp=sharing)
+![Alt Text](https://github.com/techbeast911/lamp_stack_project/blob/main/img/Screenshot%202024-05-12%20104738.png)
 
-![Alt Text](https://drive.google.com/file/d/12tmuOdPfaIP9BN-NZqHq_ytlYGujgenF/view?usp=sharing)
+![Alt Text](https://github.com/techbeast911/lamp_stack_project/blob/main/img/Screenshot%202024-05-12%20105023.png)
 
-![Alt Text](https://drive.google.com/file/d/1kQbicBUOQkOy_v47VeCSoJJoKe6u-_N_/view?usp=sharing)
+![Alt Text](https://github.com/techbeast911/lamp_stack_project/blob/main/img/Screenshot%202024-05-12%20105659.png)
 
 
 
@@ -134,12 +134,12 @@ ii. Add a New Inbound Rule:
   
   curl http://localhost:80
 
-![Alt Text](https://drive.google.com/file/d/13X4eZmD5vtbeeVUP6n_7Ue0TK1GDw1bX/view?usp=sharing)
+![Alt Text](https://github.com/techbeast911/lamp_stack_project/blob/main/img/Screenshot%202024-05-13%20123926.png)
 
 
 #### test apache is working in web
 
-![Alt Text](https://drive.google.com/file/d/1OCD7ieZmhfwepndl3EadS5MfX1uIpokk/view?usp=sharing)
+![Alt Text](https://github.com/techbeast911/lamp_stack_project/blob/main/img/Screenshot%202024-05-13%20124323.png)
 
 
   
@@ -157,7 +157,7 @@ ii. Add a New Inbound Rule:
 #### issue(sudo mysql  ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO))
      mysql -u root -p
      
-![Alt Text](https://drive.google.com/file/d/1-jdSo8t3_v1nPLNFTRGyeVvzkEAKjI45/view?usp=sharing)
+![Alt Text](https://github.com/techbeast911/lamp_stack_project/blob/main/img/Screenshot%202024-05-13%20125207.png)
 
      
 #### change root password in 2 steps:
@@ -172,7 +172,7 @@ ii)ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your 
 
 #### Confirm php version
 ####      php -v
-![Alt Text](https://drive.google.com/file/d/1fj05dERXXspNL0etolmMt9-7xmlmbxeY/view?usp=sharing)
+![Alt Text](https://github.com/techbeast911/lamp_stack_project/blob/main/img/Screenshot%202024-05-13%20125345.png)
 
 
 at this point your lamp stack is fully and completely operational
@@ -195,7 +195,7 @@ we will set up a domain called teejay
    solution:sudo chown -R ubuntu:ubuntu /var/www/teejay2
    
 
-![Alt Text](https://drive.google.com/file/d/1isMe4WGKc5fxBHjmwD_whAjSM8NYrPRY/view?usp=sharing)
+![Alt Text](https://github.com/techbeast911/lamp_stack_project/blob/main/img/Screenshot%202024-05-13%20125910.png)
 
    
 #### create and open a new configuration in apache's sites-available using your preferred command line editor, here we are using vim
@@ -211,14 +211,14 @@ we will set up a domain called teejay
         CustomLog ${APACHE_LOG_DIR}/access.log combined
     </VirtualHost>
     
-![Alt Text](https://drive.google.com/file/d/1bxo7GR2cQ_j3XgzgLl47PLLAh3Fgcqr5/view?usp=sharing)
+![Alt Text](https://github.com/techbeast911/lamp_stack_project/blob/main/img/Screenshot%202024-05-13%20130052.png)
 
 #### type w! to write file hit enter then press : hit enter and press q! to quit page
 
 #### use the ls command to show the new file in the sites-available directory
    sudo ls  /etc/apache2/sites-available
    
-![Alt Text](https://drive.google.com/file/d/1j9man92rf0fEY73_cm-cSTpKvj4jHAQa/view?usp=sharing)
+![Alt Text](https://github.com/techbeast911/lamp_stack_project/blob/main/img/Screenshot%202024-05-13%20132958.png)
 
 #### use a2ensite to enable the virtual host
     
@@ -240,10 +240,10 @@ we will set up a domain called teejay
    sudo echo "Hello LAMP from $(curl -s http://169.254.169.254/latest/meta-data/hostname)" \
   "with public IP $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4)" > /var/www/teejay/index.html
    
-![Alt Text](https://drive.google.com/file/d/11EVG8JbsTiX8TppyAR_9JG0sLO1nrffc/view?usp=sharing)
+![Alt Text](https://github.com/techbeast911/lamp_stack_project/blob/main/img/Screenshot%202024-05-13%20133628.png)
 
 
-![Alt Text](img/Screenshot 2024-05-13 134351.png)
+![Alt Text](https://github.com/techbeast911/lamp_stack_project/blob/main/img/Screenshot%202024-05-13%20133740.png)
 
 
 ### Enable php on website
