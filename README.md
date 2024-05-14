@@ -1,3 +1,5 @@
+https://github.com/techbeast911/lamp_stack_project
+
 Title: Navigating AWS EC2 Instances and Configuring Apache Web Server
 
 In the realm of cloud computing, Amazon Web Services (AWS) EC2 (Elastic Compute Cloud) stands as a pillar, offering users the ability to deploy virtual servers effortlessly. Paired with the renowned Apache web server, I created a robust web hosting environment tailored to my needs. This essay delves into the essential steps and commands involved in setting up an EC2 instance and configuring Apache, providing a comprehensive guide for effective deployment.
